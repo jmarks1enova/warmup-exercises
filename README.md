@@ -1,13 +1,12 @@
 # Warm-Up Exercises
 
-## Setup
+## Setup & Execution
 
 Clone this repository.
 
 ```sh
 git clone git@github.com:JumpstartLab/warmup-exercises.git
 ```
-
 
 ### Ruby
 
@@ -16,6 +15,11 @@ git clone git@github.com:JumpstartLab/warmup-exercises.git
 
 ```bash
 $ \curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled
+```
+
+```bash
+$ cd WARMUP
+$ ruby WARMUP_test.rb
 ```
 
 ### JavaScript & CoffeeScript
@@ -34,57 +38,10 @@ Update the `~/.bash_profile` to include NPM binary files on the PATH:
 export PATH=/usr/local/share/npm/bin:$PATH
 ```
 
-### Python
-
-* Install Python
-
-```bash
-$ brew install python
-```
-
-### Clojure
-
-* Install Leiningen:
-
-```bash
-$ brew install leiningen
-```
-
-Install lein-exec: edit `~/.lein/profiles.clj` and add `{:user {:plugins [[lein-exec "0.3.1"]]}}`
-
-
-### Haskell
-
-Download and install a recent Haskell Platform (GHC) for your OS from haskell.org/platform. Linux distributions are likely to name this package haskell-platform.
-
-### Objective-C
-
-* Install Xcode (generally installed on Mac)
-* Install the Objc Test Runner
-* Install the xctool
-
-```
-$ gem install objc
-$ brew install xctool
-```
-
-## Execution
-
-### Ruby
-
-```bash
-$ cd WARMUP
-$ ruby test.rb
-```
-
-### JavaScript
-
 ```bash
 $ cd WARMUP
 $ jasmine-node test.spec.js
 ```
-
-### CoffeeScript
 
 Jasmine-Node favors JavaScript files over CoffeeScript (even with the differing
 file endings) so the test file named is named differently.
@@ -96,12 +53,26 @@ $ jasmine-node --coffee coffee.spec.coffee
 
 ### Python
 
+* Install Python
+
+```bash
+$ brew install python
+```
+
 ```bash
 $ cd WARMUP
 $ python WARMUP_test.py
 ```
 
 ### Clojure
+
+* Install Leiningen:
+
+```bash
+$ brew install leiningen
+```
+
+Install lein-exec: edit `~/.lein/profiles.clj` and add `{:user {:plugins [[lein-exec "0.3.1"]]}}`
 
 * If you installed lein-exec:
 
@@ -119,12 +90,23 @@ $ java -cp clojure-1.5.1.jar clojure.main WARMUP.clj
 
 ### Haskell
 
+Download and install a recent Haskell Platform (GHC) for your OS from haskell.org/platform. Linux distributions are likely to name this package haskell-platform.
+
 ```bash
 $ cd WARMUP
 $ runhaskell -Wall WARMUP.hs
 ```
 
 ### Objective-C
+
+* Install Xcode (generally installed on Mac)
+* Install the Objc Test Runner
+* Install the xctool
+
+```
+$ gem install objc
+$ brew install xctool
+```
 
 ```bash
 $ cd WARMUP
