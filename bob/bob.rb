@@ -4,11 +4,8 @@ class Bob
   end
 
   def hey(message)
-    if is_uppercase?(message)
-      'Woah, chill out!'
-    else
-      'Whatever.'
-    end
+    return 'Woah, chill out!' if is_uppercase?(message)
+    'Whatever.'
   end
 
   def is_uppercase?(string)
